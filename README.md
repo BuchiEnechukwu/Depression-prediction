@@ -1,13 +1,62 @@
-# Depression-prediction
-In public health, understanding the nature of depression as a mental health disorder stands as a pressing challenge warranting comprehensive research and policy attention (Johnson & Johnson, 2019). Recognized globally for its negative impact on people’s well-being and economic productivity (World Health Organization, 2020), depression has become a focus of various health studies and interventions. The WHO states that over 280 million people worldwide have depression and acknowledges that various lifestyle factors such as physical inactivity, healthy eating habits, alcohol abuse, and related factors have an influence on its onset and progression (WHO, 2020).
+# Depression Prediction Using BRFSS 2015 Survey Data
 
-This is a comprehensive analysis of the Behavioural Risk Factor Surveillance System (BRFSS) dataset for the year 2015, targeting key patterns and insights into depression. The research is driven by a need to understand depression's underlying factors and its distribution across various demographics and lifestyle choices. Specifically, the aims are to:
+This project uses the 2015 Behavioral Risk Factor Surveillance System (BRFSS) dataset to explore factors associated with self-reported depression and to build a predictive model for identifying individuals at higher risk. The work was conducted as part of a personal learning project to strengthen my applied data science skills and demonstrate how health informatics can support population health.
 
-Identify critical risk factors associated with depression, including other chronic conditions, lifestyle factors, and demographic variables.
-Investigate state variations in depression prevalence, determining if certain regions exhibit higher rates.
-Develop a predictive model to assess the likelihood of depression based on diverse risk factors.
-These objectives are aligned with the broader goal of informing targeted interventions and policy decisions that can effectively address the growing concerns surrounding mental health and depression. The study's approach offers a unique perspective by leveraging a large-scale dataset to uncover patterns that might otherwise remain obscured in smaller studies.
+## 📊 Dataset
 
-The BRFSS is compiled through a national survey, conducted by the U.S. Centers for Disease Control and Prevention (CDC, 2015), with over 400,000 interviews each year –the largest ongoing adult health survey system in the world. This survey system provides insights capable of contributing to a deeper understanding of demographic and behavioural determinants (Smith et al., 2017).
+- **Source**: [CDC BRFSS 2015 Public Use Data](https://www.cdc.gov/brfss/annual_data/annual_2015.html)
+- **Sample Size**: Over 250,000 survey responses across U.S. states
+- **Format**: Structured data (CSV)
+- **Key Variables**: Mental health status, chronic disease, age, gender, alcohol/tobacco use, physical activity, healthcare access, and social support
 
-The analysis starts with data preparation and cleaning, followed by exploratory data analysis to summarize and visualize key variables. A detailed statistical analysis, including modelling and the application of techniques like SMOTE to address dataset imbalances were carried out.
+## 🔍 Objective
+
+- Identify the demographic and behavioural risk factors most associated with depression
+- Build and evaluate a logistic regression model to predict the likelihood of self-reported depression
+- Demonstrate documentation and coding best practices using Python
+
+## 🧪 Methodology
+
+- **Data Cleaning**: Null value treatment, type conversion, and variable selection
+- **Exploratory Data Analysis (EDA)**: Descriptive statistics and univariate plots to examine data distributions
+- **Feature Engineering**: Recoding of categorical variables, binary mapping, and removal of irrelevant columns
+- **Modelling**: Logistic Regression with model evaluation using accuracy, precision, recall, and ROC-AUC
+- **Tools Used**: Python (pandas, seaborn, matplotlib, scikit-learn)
+
+## 📈 Key Insights
+
+- Depression was more prevalent among younger adults, females, and those with chronic illness or limited physical activity
+- Lack of healthcare access and unhealthy behaviours (e.g., heavy drinking) were also associated with increased depression risk
+- The logistic regression model achieved reasonable predictive power, with an ROC AUC of approximately 0.74
+
+## 📊 Visualisations
+
+Charts and graphs include:
+- Distribution of depression by age group and gender
+- Correlation heatmaps of selected features
+- ROC curve of the logistic regression model
+
+## 🧠 Challenges and Learnings
+
+- **Challenge**: Class imbalance between depressed and non-depressed groups required attention in modelling
+- **Resolution**: Applied class weight balancing during model training to address this
+- **Learning**: Working with real-world public health data demands careful feature selection and interpretation
+
+## 🔮 Future Work
+
+- Expand to multi-model comparison (e.g., random forest, gradient boosting)
+- Apply feature selection techniques like LASSO or recursive elimination
+- Extend the dataset to recent BRFSS years (2018–2022) for temporal comparison
+- Include social determinants of health (e.g., housing, employment) if available
+
+## 📁 Repository Structure
+
+- `Depression_prediction.ipynb` — Full analysis notebook
+- `data/` — Folder containing cleaned CSV file (not shared publicly due to size)
+- `README.md` — This documentation
+
+## 👩🏾‍💻 Author
+
+- **Onyebuchi Enechukwu** 
+
+This project is shared for demonstration and portfolio purposes under a permissive educational license.
