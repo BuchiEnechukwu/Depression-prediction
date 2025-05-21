@@ -57,7 +57,7 @@ This project explores the prevalence of depression across ten U.S. states using 
 
 ## Author
 
-- **Onyebuchi Enechukwu** 
+- **Emeka Onyebuchi Enechukwu** 
 
 ## Author Notes
 
