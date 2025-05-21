@@ -27,7 +27,6 @@ This project explores the prevalence of depression across ten U.S. states using 
 - **Exploratory Data Analysis (EDA)**: Descriptive statistics and univariate plots to examine data distributions. Correlation analysis
 - **Feature Engineering**: Recoding of categorical variables, binary mapping, and removal of irrelevant columns
 - **Modelling**: Logistic Regression with model evaluation using accuracy, precision, recall, and ROC-AUC
-- **Tools Used**: Python (pandas, seaborn, matplotlib, scikit-learn)
 
 ## Key Insights
 
