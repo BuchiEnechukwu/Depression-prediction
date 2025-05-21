@@ -1,24 +1,30 @@
 # Depression Prediction Using BRFSS 2015 Survey Data
 
-This project uses the 2015 Behavioral Risk Factor Surveillance System (BRFSS) dataset to explore factors associated with self-reported depression and to build a predictive model for identifying individuals at higher risk. The work was conducted as part of a personal learning project to strengthen my applied data science skills and demonstrate how health informatics can support population health.
+This project explores the prevalence of depression across ten U.S. states using the 2015 Behavioral Risk Factor Surveillance System (BRFSS) dataset. It applies data cleaning, exploratory analysis, and logistic regression to identify key predictors of depression.
+
+## Project Objectives
+
+1. Predict depression prevalence based on sociodemographic, socioeconomic, and behavioural factors, comorbidities.
+2. Identify key risk factors associated with depression.
+3. Support awareness and early intervention efforts through open-access analysis.
+
+## Tools and Libraries
+•	pandas for data cleaning and manipulation
+•	seaborn, matplotlib for exploratory data visualisation
+•	scikit-learn for logistic regression modelling and evaluation
+•	Jupyter Notebook for interactive development
 
 ## Dataset
 
 - **Source**: [CDC BRFSS 2015 Public Use Data](https://www.cdc.gov/brfss/annual_data/annual_2015.html)
-- **Sample Size**: Over 250,000 survey responses across U.S. states
+- **Sample Size**: Over 440,000 survey responses across U.S. states
 - **Format**: Structured data (CSV)
-- **Key Variables**: Mental health status, chronic disease, age, gender, alcohol/tobacco use, physical activity, healthcare access, and social support
-
-## Objective
-
-- Identify the demographic and behavioural risk factors most associated with depression
-- Build and evaluate a logistic regression model to predict the likelihood of self-reported depression
-- Demonstrate documentation and coding best practices using Python
+- **Key Variables**: Mental health status, chronic disease, age, gender, education, income, alcohol/tobacco use, physical activity, BMI
 
 ## Methodology
 
 - **Data Cleaning**: Null value treatment, type conversion, and variable selection
-- **Exploratory Data Analysis (EDA)**: Descriptive statistics and univariate plots to examine data distributions
+- **Exploratory Data Analysis (EDA)**: Descriptive statistics and univariate plots to examine data distributions. Correlation analysis
 - **Feature Engineering**: Recoding of categorical variables, binary mapping, and removal of irrelevant columns
 - **Modelling**: Logistic Regression with model evaluation using accuracy, precision, recall, and ROC-AUC
 - **Tools Used**: Python (pandas, seaborn, matplotlib, scikit-learn)
@@ -27,14 +33,8 @@ This project uses the 2015 Behavioral Risk Factor Surveillance System (BRFSS) da
 
 - Depression was more prevalent among younger adults, females, and those with chronic illness or limited physical activity
 - Lack of healthcare access and unhealthy behaviours (e.g., heavy drinking) were also associated with increased depression risk
-- The logistic regression model achieved reasonable predictive power, with an ROC AUC of approximately 0.74
+- The logistic regression model achieved reasonable predictive power, with an ROC AUC of approximately 0.78
 
-## Visualisations
-
-Charts and graphs include:
-- Distribution of depression by age group and gender
-- Correlation heatmaps of selected features
-- ROC curve of the logistic regression model
 
 ## Challenges and Learnings
 
@@ -59,4 +59,6 @@ Charts and graphs include:
 
 - **Onyebuchi Enechukwu** 
 
-This project is shared for demonstration and portfolio purposes under a permissive educational license.
+## Author Notes
+
+This project was developed as part of my independent data science work to explore public health topics using open datasets. Feedback and suggestions are welcome.
